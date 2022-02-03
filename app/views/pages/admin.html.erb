@@ -1,0 +1,11 @@
+<% if current_user.id != 1 %>
+<div> Cette page est pour les admins blabla!</div>
+<%= link_to "revenir à la page d'accueil", root_path %>
+
+
+<% else %>
+Bienvenue sur Lexplore cher admin blablka!
+
+<%= link_to "créer un nouveau coach", new_coach_path %>
+<%= link_to "revenir à la page d'accueil", root_path %>
+<% end %>
