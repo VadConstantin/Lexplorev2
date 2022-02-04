@@ -1,11 +1,17 @@
-<% if current_user.id != 1 %>
-<div> Cette page est pour les admins blabla!</div>
-<%= link_to "revenir à la page d'accueil", root_path %>
+<%= render 'shared/admin_navbar' %>
+<div class="container mt-4">
+  <% if current_user.id != 1 %>
+    <div> Accès non autorisé !</div>
+    <%= link_to "revenir à la page d'accueil", root_path %>
+  <% else %>
+    <div class="welcome">
+    Bienvenue sur la partie Admin de Lexplore !
 
+    <br>
+    <br>
 
-<% else %>
-Bienvenue sur Lexplore cher admin blablka!
-
-<%= link_to "créer un nouveau coach", new_coach_path %>
-<%= link_to "revenir à la page d'accueil", root_path %>
-<% end %>
+    <%= link_to "Créer un nouveau coach", new_coach_path, class: 'btn btn-primary' %>
+    <%= link_to "Revenir à l'accueil", root_path, class: 'btn btn-primary' %>
+    <% end %>
+    </div>
+</div>
