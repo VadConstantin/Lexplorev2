@@ -1,1 +1,5 @@
 <div> Bienvenue sur Lexplore !</div>
+
+<div class="photo">
+  <%= image_tag cl_image_path @coach.photo.key, :width=>1000, :height=>1000, :crop=>"lfill" %>
+</div>

@@ -1,11 +1,17 @@
-<%= render 'shared/admin_navbar' %>
+<% if !user_signed_in? %>
+<div class="nav-item">
+  <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+</div>
+<% else %>
+<% end %>
+
 <div class="container mt-4">
-  <% if current_user.id != 1 %>
+  <% if current_user.email != "constantin.natacha@gmail.com" %>
     <div> Accès non autorisé !</div>
     <%= link_to "revenir à la page d'accueil", root_path %>
   <% else %>
     <div class="welcome">
-    Bienvenue sur la partie Admin de Lexplore !
+    Bienvenue <%=current_user.first_name %> sur la partie Admin de Lexplore !
 
     <br>
     <br>

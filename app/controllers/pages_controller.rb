@@ -4,9 +4,11 @@ class PagesController < ApplicationController
 
   def home
     @users = User.all
+    @coach = Coach.last
   end
 
   def admin
+
   end
 
 end
