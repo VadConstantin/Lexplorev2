@@ -1,4 +1,18 @@
 .intro {
-  margin: 70px;
-  font-size: 22px;
+  margin-top: 50px;
+  font-size: 16px;
+  width: 50%;
+
+}
+
+.margin-100 {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.flex-intro {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }

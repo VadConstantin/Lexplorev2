@@ -6,6 +6,7 @@
   position: absolute;
   position: sticky;
   top: 0;
+  z-index: 10;
 
 
 }
@@ -21,7 +22,7 @@
 .nav-link {
   font-weight: bold;
   color: rgb(8, 31, 61);
-  font-size: 34px;
+  font-size: 38px;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {

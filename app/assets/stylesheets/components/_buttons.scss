@@ -3,7 +3,7 @@
     background-color: rgb(255, 234, 221);
     border-color: rgb(255, 234, 221);
     &:hover {
-      color: white;
+      color: rgb(255, 234, 221);
       background-color: rgb(8, 31, 61);
       border-color: rgb(8, 31, 61);
     }
@@ -25,6 +25,23 @@
     background-color: rgb(8, 31, 61);
     color: white;
     border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+}
+
+.btn-contact {
+  text-decoration: none;
+  color: rgb(8, 31, 61);
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: none;
+    background-color: rgb(8, 31, 61);
+    color: white;
+    border-radius: 50px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
