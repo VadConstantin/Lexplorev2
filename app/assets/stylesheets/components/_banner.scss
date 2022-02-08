@@ -1,0 +1,32 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+}
+
+.banner h1 {
+  margin: 0;
+  color: rgb(255, 234, 221);
+  font-size: 50px;
+  opacity: 0.90;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  width: 600px;
+  margin-left: 60px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: rgb(255, 234, 221);
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner-elements {
+  position: absolute;
+  top: 400px;
+}

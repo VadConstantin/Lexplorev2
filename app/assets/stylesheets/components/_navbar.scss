@@ -2,6 +2,11 @@
   justify-content: space-between;
   background: rgb(255, 234, 221);
   height: 180px;
+  overflow: hidden;
+  position: absolute;
+  position: sticky;
+  top: 0;
+
 
 }
 
@@ -31,7 +36,6 @@
 
 .dropdown-item {
   color: rgb(8, 31, 61);
-  border-radius: 20px;
   border-radius: 20px;
   padding-left: 20px;
   padding-right: 20px;
