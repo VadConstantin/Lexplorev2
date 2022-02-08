@@ -23,6 +23,9 @@
   font-weight: bold;
   color: rgb(8, 31, 61);
   font-size: 38px;
+  &:hover {
+    color: rgb(8, 31, 61);
+  }
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
