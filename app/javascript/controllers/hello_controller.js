@@ -18,7 +18,6 @@ export default class extends Controller {
     const logo = document.querySelector(".nav-link")
     const links = document.querySelectorAll(".dropdown-item")
 
-    console.log(links)
 
     window.addEventListener("scroll", () => {
       console.log(window.scrollY)
@@ -36,7 +35,6 @@ export default class extends Controller {
         links.forEach((link) => {
           link.style = "opacity: 1"
         })
-
        }
 
       else {
