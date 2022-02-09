@@ -12,6 +12,8 @@
         <% if user_signed_in? %>
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
         <% else %>
+        <%= link_to "Mes programmes", "#", class: "dropdown-item" %>
+        <%= link_to "A propos", "#", class: "dropdown-item" %>
         <%= link_to "Contact", "#", class: "dropdown-item" %>
         <% end %>
       </ul>
