@@ -3,7 +3,42 @@
   font-size: 16px;
   width: 40%;
   text-align: justify;
+}
 
+.propos {
+  margin-top: 0px;
+  font-size: 16px;
+  width: 50%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+}
+
+.programme {
+  margin-top: 0px;
+  font-size: 16px;
+  width: 50%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+}
+
+.programme-title {
+  position: absolute;
+  top: 30px;
+  left: 770px;
+}
+
+.dessin-propos {
+transition: 0.8s;
+}
+
+.dessin-programme {
+transition: 0.8s;
 }
 
 .margin-100 {
@@ -16,4 +51,10 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+.pilier {
+  text-align: start;
+  width: 250px;
+  padding-top: 50px;
 }

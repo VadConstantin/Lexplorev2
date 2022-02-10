@@ -3,16 +3,18 @@
 .body-anim {
   text-align:center;
   color: rgb(8, 31, 61);
-  font-size:40px;
+  font-size:50px;
   padding-top:18vh;
   overflow:hidden;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0,0,0);
+  position: absolute;
+  right: 60px;
+  top: -20px;
 }
 
 .div-anim {
-  display:inline-block;
   overflow:hidden;
   white-space:nowrap;
 }
@@ -51,9 +53,9 @@
 @keyframes reveal {
     0% {opacity:0;width:0px;}
     20% {opacity:1;width:0px;}
-    30% {width:355px;}
+    30% {width:500px;}
     80% {opacity:1;}
-    100% {opacity:0;width:355px;}
+    100% {opacity:0;width:500px;}
 }
 
 
