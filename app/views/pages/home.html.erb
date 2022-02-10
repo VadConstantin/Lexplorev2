@@ -1,205 +1,243 @@
 <div data-controller="hello">
-    <div class="photo">
-      <%#= image_tag cl_image_path @coach.photo.key, :width=>1000, :height=>1000, :crop=>"lfill" %>
+
+  <div class="photo">
+    <%#= image_tag cl_image_path @coach.photo.key, :width=>1000, :height=>1000, :crop=>"lfill" %>
+  </div>
+  <%# --------- banner --------- %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0.9,0,0.2)), url(<%= image_path('corn-bis.jpeg') %>)">
+    <div class="banner-elements">
+      <h1>
+        Vous accompagner dans votre projet professionnel
+      </h1>
+      <br>
+      <br>
+      <div>
+        <%= link_to "Prendre rendez-vous", "#", class: "btn-rdv"%>
+      </div>
     </div>
-    <%# --------- banner --------- %>
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0.9,0,0.2)), url(<%= image_path('corn-bis.jpeg') %>)">
-      <div class="banner-elements">
-        <h1>
-          Vous accompagner dans votre projet professionnel
-        </h1>
+  </div>
+
+  <div class="container margin-100">
+
+    <%# --------- Intro --------- %>
+
+    <div class="flex-intro">
+      <div class="intro">
+        <strong style="font-size: 35px;"><em>L</em>exploration</strong>
         <br>
         <br>
+        Explorer c’est l’envie de sortir de soi, de chercher à rencontrer de nouveaux horizons. Avoir l’envie de porter son regard ailleurs, de se définir un but et se mettre en marche pour l’atteindre. On peut avoir envie d’ailleurs sans savoir où aller.
+        <br>
+        <br>
+        Ma mission est de vous accompagner dans votre projet professionnel, de définir avec vous un objectif et vous aidez à l’atteindre.
+      </div>
+
+      <div class="body-anim">
+        <div class="div-anim"><em>L</em>explore</div>
+        <div class="div-anim">
+          <span>vous accompagne</span>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <%# ---------contact -------- %>
+
+    <div class="footer-links">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+        <%= link_to "contact", "#", class: "link" %>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <%# ---------cards-------- %>
+
+    <div class="cards">
+      <%=link_to "#" do %>
+      <div class="cards-parent">
+        <div id="a-propos">À propos</div>
+        <div class="card-1">
+        </div>
+      </div>
+      <% end %>
+
+      <%=link_to "#" do %>
+      <div class="cards-parent">
+        <div id="programs">Mes programmes</div>
+        <div class="card-2">
+        </div>
+      </div>
+      <% end %>
+
+      <%=link_to "#" do %>
+      <div class="cards-parent">
+        <div id="reviews">Témoignages</div>
+        <div class="card-3">
+        </div>
+      </div>
+      <% end %>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <%# ---------a propos-------- %>
+
+    <div class="flex-intro">
+      <div class="dessin-propos">
+      <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
+      <%= image_tag "dessin.png", width: 500, height: 500, style: "border-radius: 5px;"  %>
+      </div>
+
+      <div class="propos">
         <div>
-          <%= link_to "Prendre rendez-vous", "#", class: "btn-rdv"%>
+          <strong style="font-size: 35px;">À propos</strong>
+          <br>
+          <br>
+          Juriste de formation et heureuse reconvertie, j’accompagne à présent des personnes en besoin d’exploration.
+          <br>
+          <br>
+          <br>
+          <%=link_to "En savoir plus", "#", class: "btn-propos"  %>
         </div>
       </div>
+
     </div>
 
-    <div class="container margin-100">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-      <%# --------- Intro --------- %>
+    <%# ---------accompagnement-------- %>
 
-      <div class="flex-intro">
-        <div class="intro">
-          <strong style="font-size: 35px;"><em>L</em>exploration</strong>
-          <br>
-          <br>
-          Explorer c’est l’envie de sortir de soi, de chercher à rencontrer de nouveaux horizons. Avoir l’envie de porter son regard ailleurs, de se définir un but et se mettre en marche pour l’atteindre. On peut avoir envie d’ailleurs sans savoir où aller.
-          <br>
-          <br>
-          Ma mission est de vous accompagner dans votre projet professionnel, de définir avec vous un objectif et vous aidez à l’atteindre.
-        </div>
+    <div class="card-accompagnement">
 
-        <div class="body-anim">
-          <div class="div-anim"><em>L</em>explore</div>
-          <div class="div-anim">
-            <span>vous accompagne</span>
-          </div>
-        </div>
-      </div>
-
-      <br>
-      <%# ---------contact -------- %>
-
-      <div class="footer-links">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-          </svg>
-          <%= link_to "contact", "#", class: "btn-contact" %>
-      </div>
-
-      <br>
-      <br>
-      <br>
-
-      <%# ---------cards-------- %>
-
-      <div class="cards">
-        <%=link_to "#" do %>
-        <div class="cards-parent">
-          <div id="a-propos">À propos</div>
-          <div class="card-1">
-          </div>
-        </div>
-        <% end %>
-
-        <%=link_to "#" do %>
-        <div class="cards-parent">
-          <div id="programs">Mes programmes</div>
-          <div class="card-2">
-          </div>
-        </div>
-        <% end %>
-
-        <%=link_to "#" do %>
-        <div class="cards-parent">
-          <div id="reviews">Témoignages</div>
-          <div class="card-3">
-          </div>
-        </div>
-        <% end %>
-      </div>
-
-
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <%# ---------a propos-------- %>
+      <strong style="font-size: 35px;">Les piliers de mon accompagnement</strong>
 
       <div class="flex-intro">
-        <div class="dessin-propos">
-        <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
-        <%= image_tag "dessin.png", width: 500, height: 500, style: "border-radius: 5px;"  %>
+        <div class="pilier">
+          <h3>
+            <strong>Optimisme</strong> 👍🏼
+            <br>
+            <br>
+          </h3>
+            Tout commence par une idée.
+            Peut-être voulez-vous créer une entreprise.
+            Peut-être voulez-vous.
         </div>
 
-        <div class="propos">
-          <div>
-            <strong style="font-size: 35px;">À propos</strong>
+        <div class="pilier">
+          <h3>
+            <strong>Créativité</strong> ✏️
             <br>
             <br>
-            Juriste de formation et heureuse reconvertie, j’accompagne à présent des personnes en besoin d’exploration.
-            <br>
-            <br>
-            <br>
-            <%=link_to "En savoir plus", "#", class: "btn-propos"  %>
-          </div>
+          </h3>
+            Ne vous souciez pas d’avoir l’air professionnel. Soyez vous-même. Il y a plus d’1,5 milliard de sites web, mais c’est votre histoire qui fera la différence.
         </div>
 
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <%# ---------accompagnement-------- %>
-
-      <div class="card-accompagnement">
-
-        <strong style="font-size: 35px;">Les piliers de mon accompagnement</strong>
-
-        <div class="flex-intro">
-          <div class="pilier">
-            <h3>
-              <strong>Optimisme</strong> 👍🏼
-              <br>
-              <br>
-            </h3>
-              Tout commence par une idée.
-              Peut-être voulez-vous créer une entreprise.
-              Peut-être voulez-vous.
-          </div>
-
-          <div class="pilier">
-            <h3>
-              <strong>Créativité</strong> ✏️
-              <br>
-              <br>
-            </h3>
-              Ne vous souciez pas d’avoir l’air professionnel. Soyez vous-même. Il y a plus d’1,5 milliard de sites web, mais c’est votre histoire qui fera la différence.
-          </div>
-
-         <div class="pilier">
-            <h3>
-              <strong>Écoute</strong> 👂🏼
-              <br>
-              <br>
-            </h3>
-              Soyez clair(e), soyez confiant(e) et n’y réfléchissez pas trop. La beauté de votre histoire, c’est qu’elle va continuer !
-          </div>
-
+        <div class="pilier">
+          <h3>
+            <strong>Écoute</strong> 👂🏼
+            <br>
+            <br>
+          </h3>
+            Soyez clair(e), soyez confiant(e) et n’y réfléchissez pas trop. La beauté de votre histoire, c’est qu’elle va continuer !
         </div>
 
       </div>
 
-      <br>
-      <br>
-      <br>
-
-
-      <%# ---------programmes-------- %>
-
-      <div class="flex-intro">
-        <div class="dessin-programme">
-        <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
-        <%= image_tag "dessin-programme.png", width: 700, height: 520, style: "border-radius: 5px;"  %>
-        </div>
-
-        <div class="propos">
-          <div>
-            <strong class ="programme-title"style="font-size: 35px;">Mes programmes</strong>
-            <br>
-            <br>
-            <div class="card-programme">
-              <h3> Bilan de carrière</h3>
-              Pour accompagner votre réflexion tout en mettant en place un plan d’action.
-              <br>
-              <br>
-              <br>
-              <%=link_to "En savoir plus", "#", class: "btn-programme"  %>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
     </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <%# ---------programmes-------- %>
+
+    <div class="flex-intro">
+      <div class="dessin-programme">
+      <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
+      <%= image_tag "dessin-programme.png", width: 700, height: 520, style: "border-radius: 5px;"  %>
+      </div>
+
+      <div class="propos">
+        <div>
+          <strong class ="programme-title"style="font-size: 35px;">Mes programmes</strong>
+          <br>
+          <br>
+          <div class="card-programme">
+            <h3> Bilan de carrière</h3>
+            Pour accompagner votre réflexion tout en mettant en place un plan d’action.
+            <br>
+            <br>
+            <br>
+            <%=link_to "En savoir plus", "#", class: "btn-programme"  %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
 
   <div class="coaching-card">
+
+    <div class="flex-coaching">
+      <div class="pilier-coaching-1">
+        <h3>
+          <strong>Coaching</strong>
+          <br>
+          <br>
+        </h3>
+          Qu’est-ce qui me manque aujourd’hui pour être épanoui.e dans mon travail ? Quelles sont mes aspirations ? Quel est mon futur challenge ? Autant de questions (et de réponses), qui peuvent être abordées dans le cadre d’un programme de coaching.
+          <br>
+          <br>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+            <%= link_to "En savoir plus", "#", class: "button-coaching" %>
+          </div>
+      </div>
+
+        <div class="pilier-coaching-2">
+          <h3>
+            <strong>Coaching ciblé</strong>
+            <br>
+            <br>
+          </h3>
+            En entretien d’embauche. Face au stress, face au manque de confiance en soi. Le coaching ciblé permet, en une ou plusieurs séances, de travailler sur des thématiques déterminées.
+            <br>
+            <br>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+              <%= link_to "En savoir plus", "#", class: "button-coaching" %>
+            </div>
+        </div>
+
+    </div>
 
   </div>
 

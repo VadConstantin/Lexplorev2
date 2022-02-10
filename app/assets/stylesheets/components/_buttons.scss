@@ -38,6 +38,16 @@
   transition: all 0.3s ease;
 }
 
+.button-coaching {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  &:hover {
+    color: rgb(255, 234, 221);
+    text-decoration: none;
+  }
+}
+
 .btn-propos {
   margin-top: 30px;
   text-decoration: none;

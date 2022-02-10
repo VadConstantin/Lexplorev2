@@ -59,3 +59,28 @@ transition: 0.8s;
   width: 250px;
   padding-top: 50px;
 }
+
+.flex-coaching {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.pilier-coaching-1 {
+  text-align: start;
+  padding-top: 130px;
+  color: white;
+  padding-left: 210px;
+  width: 650px;
+  text-align: justify;
+}
+
+.pilier-coaching-2 {
+  text-align: start;
+  padding-top: 130px;
+  color: white;
+  padding-right: 160px;
+  width: 650px;
+  text-align: justify;
+}

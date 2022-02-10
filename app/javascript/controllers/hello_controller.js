@@ -3,11 +3,11 @@ import { Controller } from "stimulus"
 export default class extends Controller {
 
   connect() {
-    console.log("Hello, Stimulus!")
+    console.log("Hello, JS controller!")
 
     const nav = document.querySelector(".navbar-lewagon")
     const logo = document.querySelector(".nav-link")
-    const links = document.querySelectorAll(".dropdown-item")
+    const links = document.querySelectorAll(".link")
     const card1 = document.querySelector(".card-1")
     const card2 = document.querySelector(".card-2")
     const card3 = document.querySelector(".card-3")
@@ -17,28 +17,27 @@ export default class extends Controller {
     const cardProgramme = document.querySelector(".card-programme")
     const cardAccompagnement = document.querySelector(".card-accompagnement")
     const cardCoaching = document.querySelector(".coaching-card")
+    const lexplore = document.querySelector("#lexplore")
 
 
     // SCROLL FOR NAVBAR
     window.addEventListener("scroll", () => {
       console.log(window.scrollY)
       if (window.scrollY > 100 && window.scrollY < 611 ) {
+        lexplore.innerText = "LEXPLORE"
         nav.style = "background: transparent"
         logo.style = "color: transparent"
         links.forEach((link) => {
           link.style = "opacity: 0"
         })
-         }
-
-      else if (window.scrollY > 611) {
-        nav.style = "background: rgb(255, 234, 221)"
+         } else if (window.scrollY > 611) {
+        lexplore.innerText = "L"
+        nav.style = "background: white"
         logo.style = "opacity: 1"
         links.forEach((link) => {
           link.style = "opacity: 1"
         })
-       }
-
-      else {
+       } else {
         nav.style = "background: rgb(255, 234, 221)"
         logo.style = "opacity: 1"
         links.forEach((link) => {
