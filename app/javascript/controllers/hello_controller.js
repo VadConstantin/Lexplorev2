@@ -15,6 +15,9 @@ export default class extends Controller {
     const propos = document.querySelector(".propos")
     const dessinProgramme = document.querySelector(".dessin-programme")
     const cardProgramme = document.querySelector(".card-programme")
+    const cardAccompagnement = document.querySelector(".card-accompagnement")
+    const cardCoaching = document.querySelector(".coaching-card")
+
 
     // SCROLL FOR NAVBAR
     window.addEventListener("scroll", () => {
@@ -63,6 +66,9 @@ export default class extends Controller {
       if (window.scrollY < 623) {
         propos.style = "top: 500px; position: absolute;"
         dessinPropos.style = "position: absolute; top: 500px"
+      } else if (window.scrollY > 1850) {
+        propos.style = "opacity: 0;"
+        dessinPropos.style = "opacity: 0"
       } else {
         dessinPropos.style = "top: 0px; position: relative;"
         propos.style = "top: 0px; position: relative;"
@@ -80,6 +86,24 @@ export default class extends Controller {
       }
     })
 
+    //SCROLL FOR ACCOMPAGNEMENT
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 1400 || window.scrollY > 2500) {
+        cardAccompagnement.style = "background-color: white"
+      } else {
+        cardAccompagnement.style = "background-color: #ffeadd"
+      }
+
+    })
+
+    // SCROLL FOR COACHING
+    window.addEventListener("scroll", ()=> {
+      if (window.scrollY < 2700) {
+        cardCoaching.style = "opacity: 0"
+      } else {
+        cardCoaching.style = "opacity: 1"
+      }
+    })
 
 
   }
