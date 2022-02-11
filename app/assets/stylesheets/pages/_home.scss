@@ -62,7 +62,7 @@ transition: 0.8s;
 
 .flex-coaching {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
   overflow: hidden;
 }
@@ -83,4 +83,16 @@ transition: 0.8s;
   padding-right: 160px;
   width: 650px;
   text-align: justify;
+}
+
+#signature {
+  position: absolute;
+  top: 320px;
+  left: 50px;
+  font-size: 22px;
+}
+
+.overflow {
+  overflow: hidden;
+  position: relative;
 }

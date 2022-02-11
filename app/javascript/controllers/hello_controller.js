@@ -18,19 +18,22 @@ export default class extends Controller {
     const cardAccompagnement = document.querySelector(".card-accompagnement")
     const cardCoaching = document.querySelector(".coaching-card")
     const lexplore = document.querySelector("#lexplore")
+    const cardTem = document.querySelector(".cards-tem")
+    const cardsTemItem = document.querySelectorAll(".card-tem-1")
 
+    console.log(cardsTemItem);
 
     // SCROLL FOR NAVBAR
     window.addEventListener("scroll", () => {
       console.log(window.scrollY)
-      if (window.scrollY > 100 && window.scrollY < 611 ) {
-        lexplore.innerText = "LEXPLORE"
+      if (window.scrollY > 100 && window.scrollY < 610 ) {
+        lexplore.innerText = ""
         nav.style = "background: transparent"
         logo.style = "color: transparent"
         links.forEach((link) => {
           link.style = "opacity: 0"
         })
-         } else if (window.scrollY > 611) {
+         } else if (window.scrollY > 610) {
         lexplore.innerText = "L"
         nav.style = "background: white"
         logo.style = "opacity: 1"
@@ -38,6 +41,7 @@ export default class extends Controller {
           link.style = "opacity: 1"
         })
        } else {
+        lexplore.innerText = "LEXPLORE"
         nav.style = "background: rgb(255, 234, 221)"
         logo.style = "opacity: 1"
         links.forEach((link) => {
@@ -101,6 +105,15 @@ export default class extends Controller {
         cardCoaching.style = "opacity: 0"
       } else {
         cardCoaching.style = "opacity: 1"
+      }
+    })
+
+    //SCROLL FOR TEMOIGNAGES
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 3250) {
+        cardTem.style = "opacity: 0; position: absolute; top: 600px;"
+      } else {
+        cardTem.style = "opacity: 1; position: relative; top: 0px"
       }
     })
 
