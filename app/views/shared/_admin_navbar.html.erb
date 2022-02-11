@@ -13,10 +13,11 @@
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
         <% else %>
         <div class="footer-links">
-        <%= link_to "À propos", "#", class: "link" %>
-        <%= link_to "Mes programmes", "#", class: "link" %>
-        <%= link_to "Témoignages", "#", class: "link" %>
-        <%= link_to "Contact", "#", class: "link" %>
+        <div class="space"><%= link_to "Qui suis-je ?", "#", class: "link" %></div>
+        <div class="space"><%= link_to "Mes programmes", "#", class: "link" %></div>
+         <div class="space"><%= link_to "Coaching", "#", class: "link" %></div>
+        <div class="space"><%= link_to "Témoignages", "#", class: "link" %></div>
+        <div class="space"><%= link_to "Contact", "#", class: "link" %></div>
         </div>
         <% end %>
       </ul>

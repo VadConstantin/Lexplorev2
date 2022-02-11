@@ -12,8 +12,8 @@
   overflow: hidden;
   position: relative;
   border-radius: 5px;
-  background-color: rgb(255, 234, 221);
   font-size: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.06);
 }
 
 .card-1 {
@@ -78,7 +78,7 @@ color: white;
 font-size: 32px;
 font-weight: initial;
 top: 90px;
-left: 123px;
+left: 105px;
 z-index: 2;
 }
 
@@ -118,7 +118,6 @@ z-index: 2;
 .card-accompagnement {
   display: inline-block;
   text-align: center;
-  background-color: rgb(255, 234, 221);
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 100px;
@@ -151,6 +150,6 @@ z-index: 2;
 .coaching-card {
   background-color: rgb(96,94,112);
   width: 100%;
-  height: 500px;
+  height: 1000px;
   transition: 0.7s;
 }

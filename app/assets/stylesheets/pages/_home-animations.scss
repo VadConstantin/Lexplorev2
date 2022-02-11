@@ -65,9 +65,15 @@
 a{
   text-decoration: none;
   color: rgb(8, 31, 61);
+  list-style-type: none;
 }
 
 .link{
+  position: relative;
+  list-style-type: none;
+}
+
+.link-contact {
   position: relative;
 }
 
@@ -84,6 +90,24 @@ a{
 }
 
 .link:hover:after{
+  width: 100%;
+  left: 0;
+  background: rgb(8, 31, 61);
+}
+
+.link-contact:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: rgb(8, 31, 61);
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.link-contact:hover:after{
   width: 100%;
   left: 0;
   background: rgb(8, 31, 61);

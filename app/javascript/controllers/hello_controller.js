@@ -20,15 +20,18 @@ export default class extends Controller {
     const lexplore = document.querySelector("#lexplore")
     const cardTem = document.querySelector(".cards-tem")
     const cardsTemItem = document.querySelectorAll(".card-tem-1")
+    const programTitle = document.querySelector(".programme-title")
 
-    console.log(cardsTemItem);
+    console.log(programTitle)
+
+
 
     // SCROLL FOR NAVBAR
     window.addEventListener("scroll", () => {
       console.log(window.scrollY)
       if (window.scrollY > 100 && window.scrollY < 610 ) {
         lexplore.innerText = ""
-        nav.style = "background: transparent"
+        nav.style = "background: transparent; box-shadow: 0 0 0px rgba(0,0,0,0);"
         logo.style = "color: transparent"
         links.forEach((link) => {
           link.style = "opacity: 0"
@@ -83,25 +86,27 @@ export default class extends Controller {
       if (window.scrollY < 1950) {
         dessinProgramme.style = "position: absolute; right: 1370px;"
         cardProgramme.style = "position: absolute; left: 1460px;"
+
       } else {
         dessinProgramme.style = "position: relative; right: 0px;"
         cardProgramme.style = "position: absolute; left: 580px;"
+
       }
     })
 
     //SCROLL FOR ACCOMPAGNEMENT
     window.addEventListener("scroll", () => {
       if (window.scrollY < 1400 || window.scrollY > 2500) {
-        cardAccompagnement.style = "background-color: white"
+        cardAccompagnement.style = ""
       } else {
-        cardAccompagnement.style = "background-color: #ffeadd"
+        cardAccompagnement.style = ""
       }
 
     })
 
     // SCROLL FOR COACHING
     window.addEventListener("scroll", ()=> {
-      if (window.scrollY < 2700) {
+      if (window.scrollY < 2550) {
         cardCoaching.style = "opacity: 0"
       } else {
         cardCoaching.style = "opacity: 1"
@@ -110,7 +115,7 @@ export default class extends Controller {
 
     //SCROLL FOR TEMOIGNAGES
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 3250) {
+      if (window.scrollY < 3680) {
         cardTem.style = "opacity: 0; position: absolute; top: 600px;"
       } else {
         cardTem.style = "opacity: 1; position: relative; top: 0px"
