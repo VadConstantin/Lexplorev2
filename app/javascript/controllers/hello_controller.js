@@ -73,8 +73,8 @@ export default class extends Controller {
         propos.style = "top: 500px; position: absolute;"
         dessinPropos.style = "position: absolute; top: 500px"
       } else if (window.scrollY > 1850) {
-        propos.style = "opacity: 0;"
-        dessinPropos.style = "opacity: 0"
+        propos.style = "opacity: 1;"
+        dessinPropos.style = "opacity: 1"
       } else {
         dessinPropos.style = "top: 0px; position: relative;"
         propos.style = "top: 0px; position: relative;"
@@ -83,14 +83,14 @@ export default class extends Controller {
 
     // SCROLL FOR PROGRAM
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 1950) {
+      if (window.scrollY < 1800) {
         dessinProgramme.style = "position: absolute; right: 1370px;"
         cardProgramme.style = "position: absolute; left: 1460px;"
-
+        programTitle.style = "opacity: 0; font-size: 35px;"
       } else {
         dessinProgramme.style = "position: relative; right: 0px;"
         cardProgramme.style = "position: absolute; left: 580px;"
-
+        programTitle.style = "opacity: 1; font-size: 35px;"
       }
     })
 
