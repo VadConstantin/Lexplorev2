@@ -3,7 +3,7 @@ import { Controller } from "stimulus"
 export default class extends Controller {
 
   connect() {
-    console.log("Hello, JS controller!")
+    console.log("HOME JS controller!")
 
     const nav = document.querySelector(".navbar-lewagon")
     const logo = document.querySelector(".nav-link")
@@ -85,11 +85,11 @@ export default class extends Controller {
       if (window.scrollY < 1800) {
         dessinProgramme.style = "position: absolute; right: 1370px;"
         cardProgramme.style = "position: absolute; left: 1460px;"
-        programTitle.style = "opacity: 0; font-size: 35px;"
+        programTitle.style = "opacity: 0; font-size: 45px; color: rgb(255,98,112)"
       } else {
         dessinProgramme.style = "position: relative; right: 0px;"
         cardProgramme.style = "position: absolute; left: 580px;"
-        programTitle.style = "opacity: 1; font-size: 35px;"
+        programTitle.style = "opacity: 1; font-size: 45px; color: rgb(255,98,112)"
       }
     })
 
