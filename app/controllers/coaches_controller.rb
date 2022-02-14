@@ -12,7 +12,7 @@ class CoachesController < ApplicationController
   def create
     @coach = Coach.new(coach_params)
     if @coach.save
-      redirect_to root_path
+      redirect_to admin_path
     else
       render :new
     end

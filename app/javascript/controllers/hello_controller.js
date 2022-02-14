@@ -32,7 +32,7 @@ export default class extends Controller {
       if (window.scrollY > 100 && window.scrollY < 610 ) {
         lexplore.innerText = ""
         nav.style = "background: transparent; box-shadow: 0 0 0px rgba(0,0,0,0);"
-        logo.style = "color: transparent"
+        logo.style = "color: transparent; color: white;"
         links.forEach((link) => {
           link.style = "opacity: 0"
         })
@@ -45,8 +45,8 @@ export default class extends Controller {
         })
        } else {
         lexplore.innerText = "LEXPLORE"
-        nav.style = "background: rgb(255, 234, 221)"
-        logo.style = "opacity: 1"
+        nav.style = "background: #FF6370"
+        logo.style = "opacity: 1; color: white;"
         links.forEach((link) => {
           link.style = "opacity: 1"
         })

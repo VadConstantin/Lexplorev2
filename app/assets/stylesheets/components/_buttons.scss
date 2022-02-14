@@ -2,6 +2,7 @@
     color: rgb(8, 31, 61);
     background-color: rgb(255, 234, 221);
     border-color: rgb(255, 234, 221);
+    margin: 0px 15px;
     &:hover {
       color: rgb(255, 234, 221);
       background-color: rgb(8, 31, 61);
@@ -12,8 +13,8 @@
 .btn-rdv {
   margin-left: 60px;
   text-decoration: none;
-  background-color: rgb(255, 234, 221);
-  color: rgb(8, 31, 61);
+  background-color: #FF6370;
+  color: white;
   border-radius: 30px;
   padding-left: 30px;
   padding-right: 30px;

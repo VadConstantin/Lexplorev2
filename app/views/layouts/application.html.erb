@@ -12,8 +12,10 @@
   </head>
 
   <body>
-    <%= render 'shared/admin_navbar' %>
-    <%= yield %>
+    <div class="content">
+      <%= render 'shared/admin_navbar' %>
+      <%= yield %>
+    </div>
     <%= render 'shared/footer' %>
     <%# <script src="app/javascript/channels/hello.js"></script> %>
   </body>

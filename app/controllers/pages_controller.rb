@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def admin
-
+    @coaches = Coach.all
   end
 
 end

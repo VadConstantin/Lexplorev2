@@ -20,4 +20,21 @@
     <%= link_to "Revenir à l'accueil", root_path, class: 'btn btn-primary' %>
     <% end %>
     </div>
+
+    <div class="text-center mt-4"> <strong style="font-size: 30px;">COACHS</strong> </div>
+
+    <div class="flex-wrap">
+
+      <% @coaches.each do |coach| %>
+
+        <div class="flex-child coach-card">
+        <div class="coach-name">
+          <%= coach.name %>
+        </div>
+        <%= image_tag(cl_image_path coach.photo.key, height: 400, width: 400, class: "", :crop => :fill) %>
+        </div>
+
+      <% end %>
+
+    </div>
 </div>

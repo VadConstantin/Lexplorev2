@@ -1,6 +1,6 @@
 class Coach < ApplicationRecord
-  has_many :programs
-  has_many :reviews
+  has_many :programs, dependent: :destroy
+  has_many :reviews, dependent: :destroy
   has_one_attached :photo
 
   validates :name, presence: true

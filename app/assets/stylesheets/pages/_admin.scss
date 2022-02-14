@@ -1,3 +1,40 @@
 .welcome {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.flex-wrap {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-child {
+  width: 400px;
+  margin: 5px;
+  height: 270px;
+  overflow:hidden;
+}
+
+.coach-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(44, 44, 75, 0.086);
+    background-clip: border-box;
+    border-radius: 10px;
+    list-style: none;
+    padding-top: 20px;
+    border: 0px solid white;
+    &:hover {
+      text-decoration: none;
+    }
+}
+
+.coach-name {
+  padding: 5px 20px;
+  text-align: center;
 }
