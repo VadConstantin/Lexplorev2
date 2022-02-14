@@ -21,9 +21,7 @@ export default class extends Controller {
     const cardTem = document.querySelector(".cards-tem")
     const cardsTemItem = document.querySelectorAll(".card-tem-1")
     const programTitle = document.querySelector(".programme-title")
-
-    console.log(programTitle)
-
+    const lexploreFooter = document.querySelector("#lexplore-footer")
 
 
     // SCROLL FOR NAVBAR
@@ -38,17 +36,18 @@ export default class extends Controller {
         })
          } else if (window.scrollY > 610) {
         lexplore.innerText = "L"
+        lexploreFooter.style = "color: white"
         nav.style = "background: white"
         logo.style = "opacity: 1"
         links.forEach((link) => {
-          link.style = "opacity: 1"
+          link.style = "opacity: 1;"
         })
        } else {
         lexplore.innerText = "LEXPLORE"
         nav.style = "background: #FF6370"
         logo.style = "opacity: 1; color: white;"
         links.forEach((link) => {
-          link.style = "opacity: 1"
+          link.style = "opacity: 1; color: white"
         })
       }
     })

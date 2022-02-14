@@ -59,7 +59,7 @@
 }
 
 
-// LINE ANIMATION ---------------------------------------------
+// LINE ANIMATION NAVBAR + CONTACT ---------------------------------------------
 
 
 a{
@@ -71,7 +71,7 @@ a{
 .link{
   position: relative;
   list-style-type: none;
-  color: white
+
 }
 
 .link-contact {
@@ -85,7 +85,8 @@ a{
   display: block;
   margin-top: 5px;
   right: 0;
-  background: rgb(8, 31, 61);
+  color: white;
+  background: white;
   transition: width .2s ease;
   -webkit-transition: width .2s ease;
 }
@@ -93,7 +94,8 @@ a{
 .link:hover:after{
   width: 100%;
   left: 0;
-  background: rgb(8, 31, 61);
+  background: white;
+  color: white;
 }
 
 .link-contact:after{
@@ -103,13 +105,42 @@ a{
   display: block;
   margin-top: 5px;
   right: 0;
-  background: rgb(8, 31, 61);
+  color: white;
+  background: white;
   transition: width .2s ease;
   -webkit-transition: width .2s ease;
 }
 
 .link-contact:hover:after{
+  color: white;
   width: 100%;
   left: 0;
   background: rgb(8, 31, 61);
+}
+
+// LINE ANIMATION FOOTER -----------------------------
+
+.link-footer{
+  position: relative;
+  list-style-type: none;
+}
+
+.link-footer:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  color: white;
+  background: white;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.link-footer:hover:after{
+  width: 100%;
+  left: 0;
+  background: white;
+  color: white;
 }
