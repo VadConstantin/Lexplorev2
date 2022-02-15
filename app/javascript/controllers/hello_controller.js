@@ -36,11 +36,12 @@ export default class extends Controller {
         })
          } else if (window.scrollY > 610) {
         lexplore.innerText = "L"
+        lexplore.style = "color: rgb(8, 31, 61);"
         lexploreFooter.style = "color: white"
         nav.style = "background: white"
         logo.style = "opacity: 1"
         links.forEach((link) => {
-          link.style = "opacity: 1;"
+          link.style = "opacity: 1; color: rgb(8, 31, 61)"
         })
        } else {
         lexplore.innerText = "LEXPLORE"
@@ -114,7 +115,7 @@ export default class extends Controller {
 
     //SCROLL FOR TEMOIGNAGES
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 3680) {
+      if (window.scrollY < 3500) {
         cardTem.style = "opacity: 0; position: absolute; top: 600px;"
       } else {
         cardTem.style = "opacity: 1; position: relative; top: 0px"

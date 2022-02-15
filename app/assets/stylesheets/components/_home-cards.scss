@@ -72,6 +72,14 @@
   background-color: rgba(52, 73, 94, 0.75);
 }
 
+#lexplore {
+
+}
+
+#lexplore-footer {
+  color: white;
+}
+
 #a-propos {
 position: absolute;
 color: white;
@@ -130,7 +138,8 @@ z-index: 2;
 
 .card-programme {
 
-  background-color: rgb(255, 234, 221);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: rgb(254,253,251);
   padding-left: 70px;
   padding-right: 150px;
   padding-top: 60px;
@@ -144,7 +153,6 @@ z-index: 2;
   top: 70px;
   left: 580px;
   transition: 1s;
-
 }
 
 .coaching-card {

@@ -109,7 +109,7 @@
         <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
         <%= image_tag "dessin.png", width: 500, height: 500, style: "border-radius: 5px;"  %>
         </div>
-        <div class="barre"></div>
+        <%# <div class="barre"></div> %>
       </div>
 
       <div class="propos">
@@ -193,13 +193,6 @@
         </div>
       </div>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
   </div>
 
     <%# ---------coaching-------- %>
@@ -207,60 +200,46 @@
 
     <div class="flex-coaching">
       <div class="pilier-coaching-1">
-        <h3>
-          <strong style="font-family: var(--bs-body-font-family); color: rgb(254,234,221);">II - Coaching</strong>
+        <h3>II - Coaching</h3>
           <br>
           <br>
-        </h3>
+
           Qu’est-ce qui me manque aujourd’hui pour être épanoui.e dans mon travail ? Quelles sont mes aspirations ? Quel est mon futur challenge ? Autant de questions (et de réponses), qui peuvent être abordées dans le cadre d’un programme de coaching.
           <br>
           <br>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-            </svg>
-            <%= link_to "En savoir plus", "#", class: "button-coaching" %>
-          </div>
+          <br>
+          <%= link_to "En savoir plus", "#", class: "btn-propos" %>
       </div>
-      <div style="padding-top: 130px;">
+      <div style="padding-top: 130px; padding-right: 210px">
         <%= image_tag "coaching-free.png", width: 500, height: 300, style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%)" %>
       </div>
     </div>
 
-    <br>
 
     <div class="flex-coaching">
-
-      <div style="padding-top: 130px;">
+      <div style="padding-top: 130px; padding-left: 100px">
         <%= image_tag "coaching.jpeg", width: 500, height: 300, style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%) " %>
       </div>
       <div class="pilier-coaching-2">
-          <h3>
-            <strong style="font-family: var(--bs-body-font-family); color: rgb(254,234,221);">III - Coaching ciblé</strong>
+          <h3>III - Coaching ciblé</h3>
             <br>
             <br>
-          </h3>
             En entretien d’embauche. Face au stress, face au manque de confiance en soi. Le coaching ciblé permet, en une ou plusieurs séances, de travailler sur des thématiques déterminées.
           <br>
           <br>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-            </svg>
-            <%= link_to "En savoir plus", "#", class: "button-coaching" %>
-          </div>
+          <br>
+          <%= link_to "En savoir plus", "#", class: "btn-propos" %>
       </div>
     </div>
+
   </div>
 
-  <br>
-  <br>
   <br>
   <br>
   <%# --------- témoignages -------- %>
 
   <div class="text-center">
-    <strong style="font-size: 35px;">Retours d'exploration</strong>
+    <strong style="font-size: 45px; color: rgb(255,98,112)">Retours d'exploration</strong>
   </div>
 
   <div class="overflow">
