@@ -23,7 +23,6 @@ export default class extends Controller {
     const programTitle = document.querySelector(".programme-title")
     const lexploreFooter = document.querySelector("#lexplore-footer")
 
-
     // SCROLL FOR NAVBAR
     window.addEventListener("scroll", () => {
       console.log(window.scrollY)
