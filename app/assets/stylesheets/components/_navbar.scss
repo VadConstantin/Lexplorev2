@@ -1,14 +1,14 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: #FF6370;
-  // height: 100px;
-  // overflow: hidden;
-  // position: absolute;
-  // position: sticky;
-  // top: 0;
-  // z-index: 10;
-  // transition: 0.5s;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  min-height: 100px;
+  overflow: hidden;
+  position: absolute;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: 0.5s;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 
 
 }
@@ -21,42 +21,35 @@
   width: 40px;
 }
 
+//LOGO NAVBAR
 .nav-link {
   font-weight: bold;
-  color: rgb(8, 31, 61);
-  font-size: 38px;
-  &:hover {
-    color: rgb(8, 31, 61);
-  }
 }
 
+#lexplore {
+font-size: 30px;
+color: white;
+}
+
+
 .navbar-light .navbar-nav .active>.nav-link {
-  color: rgb(8, 31, 61);
+  color: rgb(255, 255, 255);
   padding-left: 30px;
 }
+
+.navbar-lewagon>#lexplore {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+.navbar-light .navbar-nav .active>.link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 
 .avatar {
   width: 40px;
   border-radius: 50%;
-}
-
-.dropdown-item {
-  margin-left: 10px;
-  color: rgb(8, 31, 61);
-  border-radius: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: rgb(8, 31, 61);
-    color: white;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-
-  }
 }

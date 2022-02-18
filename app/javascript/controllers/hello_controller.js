@@ -33,12 +33,11 @@ export default class extends Controller {
         links.forEach((link) => {
           link.style = "opacity: 0"
         })
-         } else if (window.scrollY > 610) {
+         } else if (window.scrollY > 609) {
         lexplore.innerText = "L"
-        lexplore.style = "color: rgb(8, 31, 61);"
         lexploreFooter.style = "color: white"
         nav.style = "background: white"
-        logo.style = "opacity: 1"
+        logo.style = "opacity: 1; color: rgb(8, 31, 61)"
         links.forEach((link) => {
           link.style = "opacity: 1; color: rgb(8, 31, 61)"
         })

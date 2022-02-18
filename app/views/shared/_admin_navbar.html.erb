@@ -10,14 +10,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
+        <li class="nav-item active">
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+        </li>
         <% else %>
-        <div class="footer-links">
-        <div class="space"><%= link_to "Qui suis-je ?", "#", class: "link" %></div>
-        <div class="space"><%= link_to "Mes programmes", "#", class: "link" %></div>
-        <div class="space"><%= link_to "Témoignages", "#", class: "link" %></div>
-        <div class="space"><%= link_to "Contact", "#", class: "link" %></div>
-        </div>
+
+
+            <li class="nav-item active space"><%= link_to "Qui suis-je ?", "#", class: "link" %></li>
+
+
+            <li class="nav-item active space"><%= link_to "Mes programmes", "#", class: "link" %></li>
+
+
+            <li class="nav-item active space"><%= link_to "Témoignages", "#", class: "link" %></li>
+
+
+            <li class="nav-item active space"><%= link_to "Contact", "#", class: "link" %></li>
+
+
         <% end %>
       </ul>
     </div>
