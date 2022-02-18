@@ -5,10 +5,18 @@ body {
   // flex-direction: column;
 }
 
-html, body {
-  // height: 100%;
+@media (max-width: 3000px) {
+  .intro {
+    width: 40%;
+  }
 }
 
-.content {
-  // flex: 1 0 auto;
+
+@media (max-width: 1400px) {
+  .body-anim {
+    display: none;
+  }
+  .intro {
+    width: 100%;
+  }
 }

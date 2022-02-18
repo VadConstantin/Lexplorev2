@@ -1,6 +1,6 @@
 .cards-parent {
   height: 220px;
-  width: 400px;
+  width: 410px;
   overflow: hidden;
   position: relative;
   border-radius: 5px;
@@ -74,7 +74,6 @@
   background-color: rgba(52, 73, 94, 0.75);
 }
 
-
 #lexplore-footer {
   color: white;
 }
@@ -115,6 +114,7 @@ z-index: 2;
   flex-wrap: wrap;
   margin-top: 50px;
   overflow: hidden;
+  justify-content: center;
 }
 
 .cards-tem {
