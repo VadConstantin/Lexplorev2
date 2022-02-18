@@ -4,6 +4,8 @@
   overflow: hidden;
   position: relative;
   border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .cards-parent-tem {
@@ -109,7 +111,8 @@ z-index: 2;
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
