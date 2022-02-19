@@ -51,6 +51,9 @@ body {
   #signature {
     font-size: 15px !important;
   }
+  .coaching-card {
+    width: 830px !important;
+  }
 }
 
 //IPAD PORTRAIT
@@ -127,7 +130,7 @@ body {
     font-size: 15px !important;
   }
   .coaching-card {
-    height: 700px !important;
+    height: 600px !important;
   }
   .cards-tem {
     flex-wrap: wrap
@@ -199,7 +202,7 @@ body {
   }
 
   .pilier-coaching-2 {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   .pilier {
