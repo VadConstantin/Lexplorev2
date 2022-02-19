@@ -107,7 +107,7 @@
       <div class="dessin-barre">
         <div class="dessin-propos">
         <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
-        <%= image_tag "dessin.png", width: 500, height: 500, style: "border-radius: 5px;"  %>
+        <%= image_tag "dessin.png", width: 500, height: 500, id: "qui-suis-je-photo", style: "border-radius: 5px;"  %>
         </div>
         <%# <div class="barre"></div> %>
       </div>
@@ -175,7 +175,7 @@
     <div class="flex-intro">
       <div class="dessin-programme">
       <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
-      <%= image_tag "dessin-program.png", width: 700, height: 520, style: "border-radius: 5px;"  %>
+      <%= image_tag "dessin-program.png", width: 700, height: 520, id: "mes-progammes-photo", style: "border-radius: 5px;"  %>
       </div>
       <div class="propos">
         <div>
@@ -214,7 +214,6 @@
         <%= image_tag "coaching-free.png", width: 500, height: 300, style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%)" %>
       </div>
     </div>
-
 
     <div class="flex-coaching">
       <div style="padding-top: 130px; padding-left: 100px">
