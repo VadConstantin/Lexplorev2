@@ -52,7 +52,7 @@ body {
     font-size: 15px !important;
   }
   .coaching-card {
-    width: 830px !important;
+    width: 830px;
   }
 }
 
@@ -199,6 +199,7 @@ body {
 
   .pilier-coaching-1 {
     padding-top: 0 !important;
+    padding-right: 0 !important;
   }
 
   .pilier-coaching-2 {
@@ -225,6 +226,7 @@ body {
   }
   .coaching-card {
     height: 700px !important;
+    width: 350px !important;
   }
   .cards-tem {
     flex-wrap: wrap
