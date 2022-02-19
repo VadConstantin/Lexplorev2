@@ -45,7 +45,7 @@
 
     <%# ---------de bonnes raisons -------- %>
 
-    <div class="contact-links">
+    <div class="contact-links" id="bonne-raison">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
@@ -96,9 +96,7 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
+
 
     <%# ---------a propos-------- %>
 
@@ -113,7 +111,7 @@
       </div>
 
       <div class="propos">
-        <div>
+        <div id="about-paraph">
           <h1 style="color: rgb(255,98,112)">Qui suis-je ?</h1>
           <br>
           <br>
@@ -177,7 +175,7 @@
       <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
       <%= image_tag "dessin-program.png", width: 700, height: 520, id: "mes-progammes-photo", style: "border-radius: 5px;"  %>
       </div>
-      <div class="propos">
+      <div class="mes-prog">
         <div>
           <h1 class ="programme-title"style="color: rgb(255,98,112)">Mes programmes</h1>
           <br>
@@ -217,7 +215,7 @@
       </div>
 
       <div class="flex-coaching">
-        <div style="padding-top: 130px; padding-right: 50px;">
+        <div class="display" style="padding-top: 130px; padding-right: 50px;">
           <%= image_tag "coaching.jpeg", width: 500, height: 300, id: "image-coaching-3", style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%) " %>
         </div>
         <div class="pilier-coaching-2">

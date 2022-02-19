@@ -3,7 +3,7 @@ import { Controller } from "stimulus"
 export default class extends Controller {
 
   connect() {
-    console.log("HOME JS controller!")
+
 
     const nav = document.querySelector(".navbar-lewagon")
     const logo = document.querySelector(".nav-link")
@@ -26,6 +26,7 @@ export default class extends Controller {
     // SCROLL FOR NAVBAR
     window.addEventListener("scroll", () => {
       console.log(window.scrollY)
+
       if (window.scrollY > 100 && window.scrollY < 610 ) {
         lexplore.innerText = ""
         nav.style = "background: transparent; box-shadow: 0 0 0px rgba(0,0,0,0);"
@@ -53,15 +54,32 @@ export default class extends Controller {
 
     // SCROLL FOR CARDS
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 240 || window.scrollY > 1600) {
-        card1.style = "position: absolute; left: -600px;"
-        card2.style = "position: absolute; top: 600px;"
-        card3.style = "position: absolute; right: -600px;"
+      if (window.screen.width > 450) {
+        if (window.scrollY < 240 || window.scrollY > 1200) {
+          card1.style = "position: absolute; left: -600px;"
+          card2.style = "position: absolute; top: 600px;"
+          card3.style = "position: absolute; right: -600px;"
 
+        } else {
+          card1.style = "position: absolute; left: 0px;"
+          card3.style = "position: absolute; right: 0px;"
+          card2.style = "position: absolute; top: 0px;"
+        }
       } else {
-        card1.style = "position: absolute; left: 0px;"
-        card3.style = "position: absolute; right: 0px;"
-        card2.style = "position: absolute; top: 0px;"
+
+        if (window.scrollY > 300) {
+          card1.style = "position: absolute; left: 0px;"
+          card2.style = "position: absolute; top: 0px;"
+          card3.style = "position: absolute; right: 0px;"
+
+        } else {
+          card1.style = "position: absolute; left: 0px;"
+          card3.style = "position: absolute; right: 0px;"
+          card2.style = "position: absolute; top: 0px;"
+        }
+
+
+
       }
     })
 
@@ -84,16 +102,22 @@ export default class extends Controller {
       if (window.scrollY < 1800) {
         dessinProgramme.style = "position: absolute; right: 1370px;"
         cardProgramme.style = "position: absolute; left: 1460px;"
-        programTitle.style = "opacity: 0; color: rgb(255,98,112)"
+        // programTitle.style = "position: relative; opacity: 0; color: rgb(255,98,112)"
       } else {
-        dessinProgramme.style = "position: relative; right: 0px;"
-        if (window.screen.width < 1400) {
+          dessinProgramme.style = "position: relative; right: 0px;"
+          if (window.screen.width < 1400 && window.screen.width > 850) {
             cardProgramme.style = "position: absolute; left: 400px;"
-            programTitle.style = "top: -6px; left: 630px; opacity: 1; color: rgb(255,98,112)"
+            // programTitle.style = "top: -6px; left: 0px; opacity: 1; color: rgb(255,98,112)"
+          } else if (window.screen.width < 850 && window.screen.width > 450) {
+            cardProgramme.style = "position: absolute; left: 400px;"
+            programTitle.style = "top: 0px !important; left: 0px !important; opacity: 1; color: rgb(255,98,112)"
+          } else if (window.screen.width < 450) {
+            dessinProgramme.style = "display: none;"
+            programTitle.style = " position: relative; top: 0px; left: 0px; transition: 1s; color: rgb(255,98,112)"
           } else {
             cardProgramme.style = "position: absolute; left: 580px;"
-            programTitle.style = "opacity: 1; color: rgb(255,98,112)"
-          }
+            // programTitle.style = "opacity: 1; color: rgb(255,98,112)"
+            }
       }
     })
 
@@ -118,7 +142,7 @@ export default class extends Controller {
 
     //SCROLL FOR TEMOIGNAGES
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 3400) {
+      if (window.scrollY < 3350) {
         cardTem.style = "opacity: 0; position: absolute; top: 600px;"
       } else {
         cardTem.style = "opacity: 1; position: relative; top: 0px"
