@@ -196,41 +196,42 @@
   </div>
 
     <%# ---------coaching-------- %>
-  <div class="coaching-card">
+  <div class="container margin-100-bis">
+    <div class="coaching-card">
 
-    <div class="flex-coaching">
-      <div class="pilier-coaching-1">
-        <h3>II - Coaching</h3>
-          <br>
-          <br>
+      <div class="flex-coaching">
+        <div class="pilier-coaching-1">
+          <h3>II - Coaching</h3>
+            <br>
 
-          Qu’est-ce qui me manque aujourd’hui pour être épanoui.e dans mon travail ? Quelles sont mes aspirations ? Quel est mon futur challenge ? Autant de questions (et de réponses), qui peuvent être abordées dans le cadre d’un programme de coaching.
-          <br>
-          <br>
-          <br>
-          <%= link_to "En savoir plus", "#", class: "btn-propos" %>
-      </div>
-      <div style="padding-top: 130px; padding-right: 210px">
-        <%= image_tag "coaching-free.png", width: 500, height: 300, style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%)" %>
-      </div>
-    </div>
 
-    <div class="flex-coaching">
-      <div style="padding-top: 130px; padding-left: 100px">
-        <%= image_tag "coaching.jpeg", width: 500, height: 300, style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%) " %>
-      </div>
-      <div class="pilier-coaching-2">
-          <h3>III - Coaching ciblé</h3>
+            Qu’est-ce qui me manque aujourd’hui pour être épanoui.e dans mon travail ? Quelles sont mes aspirations ? Quel est mon futur challenge ? Autant de questions (et de réponses), qui peuvent être abordées dans le cadre d’un programme de coaching.
             <br>
             <br>
-            En entretien d’embauche. Face au stress, face au manque de confiance en soi. Le coaching ciblé permet, en une ou plusieurs séances, de travailler sur des thématiques déterminées.
-          <br>
-          <br>
-          <br>
-          <%= link_to "En savoir plus", "#", class: "btn-propos" %>
+            <br>
+            <%= link_to "En savoir plus", "#", class: "btn-propos" %>
+        </div>
+        <div style="padding-top: 130px;">
+          <%= image_tag "coaching-free.png", width: 500, height: 300, id: "image-coaching-2", style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%)" %>
+        </div>
+      </div>
+
+      <div class="flex-coaching">
+        <div style="padding-top: 130px; padding-right: 50px;">
+          <%= image_tag "coaching.jpeg", width: 500, height: 300, id: "image-coaching-3", style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%) " %>
+        </div>
+        <div class="pilier-coaching-2">
+            <h3>III - Coaching ciblé</h3>
+
+              <br>
+              En entretien d’embauche. Face au stress, face au manque de confiance en soi. Le coaching ciblé permet, en une ou plusieurs séances, de travailler sur des thématiques déterminées.
+            <br>
+            <br>
+            <br>
+            <%= link_to "En savoir plus", "#", class: "btn-propos" %>
+        </div>
       </div>
     </div>
-
   </div>
 
   <br>

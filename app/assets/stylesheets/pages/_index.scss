@@ -1,8 +1,6 @@
 body {
   background-color: rgba(253,240,230,.12);
   color: rgb(8, 31, 61);
-  // display: flex;
-  // flex-direction: column;
 }
 
 // LAPTOP
@@ -30,9 +28,25 @@ body {
   }
   .card-programme {
     position: absolute;
-    left: 400px;
+    left: 420px !important;
     width: 500px;
     padding-right: 100px;
-
+  }
+  .pilier {
+    width: 260px !important;
+  }
+  #image-coaching-2 {
+    width: 430px;
+    height: 278px;
+  }
+  #image-coaching-3 {
+    width: 400px;
+    height: 250px;
+  }
+  .cards-parent-tem {
+    font-size: 12px;
+  }
+  #signature {
+    font-size: 15px !important;
   }
 }

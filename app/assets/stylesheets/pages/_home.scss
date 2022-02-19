@@ -48,6 +48,11 @@ transition: 0.8s;
   padding-right: 20px;
 }
 
+.margin-100-bis {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .flex-intro {
   display: flex;
   justify-content: space-between;
@@ -57,15 +62,14 @@ transition: 0.8s;
 
 .pilier {
   text-align: start;
-  width: 250px;
+  width: 350px;
   padding-top: 50px;
 }
 
 .flex-coaching {
   display: flex;
   position: relative;
-  overflow: hidden;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .pilier-coaching-1 {
@@ -73,14 +77,13 @@ transition: 0.8s;
   padding-top: 130px;
   width: 650px;
   text-align: justify;
-  padding-left: 130px;
+  padding-right: 50px;
 }
 
 .pilier-coaching-2 {
   text-align: start;
   padding-top: 130px;
   padding-left: 0px;
-  padding-right: 180px;
   width: 650px;
   text-align: justify;
 }

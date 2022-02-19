@@ -53,7 +53,7 @@ export default class extends Controller {
 
     // SCROLL FOR CARDS
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 300 || window.scrollY > 1250) {
+      if (window.scrollY < 240 || window.scrollY > 1600) {
         card1.style = "position: absolute; left: -600px;"
         card2.style = "position: absolute; top: 600px;"
         card3.style = "position: absolute; right: -600px;"
@@ -84,11 +84,16 @@ export default class extends Controller {
       if (window.scrollY < 1800) {
         dessinProgramme.style = "position: absolute; right: 1370px;"
         cardProgramme.style = "position: absolute; left: 1460px;"
-        programTitle.style = "opacity: 0; font-size: 45px; color: rgb(255,98,112)"
+        programTitle.style = "opacity: 0; color: rgb(255,98,112)"
       } else {
         dessinProgramme.style = "position: relative; right: 0px;"
-        cardProgramme.style = "position: absolute; left: 580px;"
-        programTitle.style = "opacity: 1; font-size: 45px; color: rgb(255,98,112)"
+        if (window.screen.width < 1400) {
+            cardProgramme.style = "position: absolute; left: 400px;"
+            programTitle.style = "top: -6px; left: 630px; opacity: 1; color: rgb(255,98,112)"
+          } else {
+            cardProgramme.style = "position: absolute; left: 580px;"
+            programTitle.style = "opacity: 1; color: rgb(255,98,112)"
+          }
       }
     })
 
@@ -113,7 +118,7 @@ export default class extends Controller {
 
     //SCROLL FOR TEMOIGNAGES
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 3500) {
+      if (window.scrollY < 3400) {
         cardTem.style = "opacity: 0; position: absolute; top: 600px;"
       } else {
         cardTem.style = "opacity: 1; position: relative; top: 0px"
