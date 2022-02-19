@@ -110,7 +110,7 @@ export default class extends Controller {
             // programTitle.style = "top: -6px; left: 0px; opacity: 1; color: rgb(255,98,112)"
           } else if (window.screen.width < 850 && window.screen.width > 450) {
             cardProgramme.style = "position: absolute; left: 400px;"
-            programTitle.style = "top: 0px !important; left: 0px !important; opacity: 1; color: rgb(255,98,112)"
+            programTitle.style = "position: absolute !important; top: 0px !important; left: 0px !important; opacity: 1; color: rgb(255,98,112)"
           } else if (window.screen.width < 450) {
             dessinProgramme.style = "display: none;"
             programTitle.style = " position: relative; top: 0px; left: 0px; transition: 1s; color: rgb(255,98,112)"

@@ -97,6 +97,10 @@ body {
     width: 680px;
   }
 
+  .card-accompagnement {
+    margin-bottom: 0;
+  }
+
   .display {
     display: none;
   }
@@ -127,6 +131,12 @@ body {
   }
   .cards-tem {
     flex-wrap: wrap
+  }
+
+  .program-title {
+    // position: absolute !important;
+    // top: 30px !important;
+    // left: 0 !important;
   }
 }
 
