@@ -21,6 +21,7 @@ export default class extends Controller {
     const cardsTemItem = document.querySelectorAll(".card-tem-1")
     const programTitle = document.querySelector(".programme-title")
     const lexploreFooter = document.querySelector("#lexplore-footer")
+    const toggler = document.querySelector(".navbar-toggler")
 
     // SCROLL FOR NAVBAR
     window.addEventListener("scroll", () => {
@@ -30,13 +31,15 @@ export default class extends Controller {
         lexplore.innerText = ""
         nav.style = "background: transparent; box-shadow: 0 0 0px rgba(0,0,0,0);"
         logo.style = "color: transparent; color: white;"
+        toggler.style = "display: none;"
         links.forEach((link) => {
           link.style = "opacity: 0"
         })
          } else if (window.scrollY > 609) {
-        lexplore.innerText = "L"
+        lexplore.innerHTML = "<em>L</em>"
         lexploreFooter.style = "color: white"
         nav.style = "background: white"
+        toggler.style = "display: initial;"
         logo.style = "opacity: 1; color: rgb(8, 31, 61)"
         links.forEach((link) => {
           link.style = "opacity: 1; color: rgb(8, 31, 61)"
@@ -44,6 +47,7 @@ export default class extends Controller {
        } else {
         lexplore.innerText = "LEXPLORE"
         nav.style = "background: #FF6370"
+        toggler.style = "display: initial"
         logo.style = "opacity: 1; color: white;"
         links.forEach((link) => {
           link.style = "opacity: 1; color: white"
@@ -129,7 +133,7 @@ export default class extends Controller {
     })
 
     // SCROLL FOR COACHING
-    window.addEventListener("scroll", ()=> {
+    window.addEventListener("scroll", () => {
       if (window.scrollY < 1750) {
         cardCoaching.style = "opacity: 0"
       } else {
