@@ -4,7 +4,6 @@ export default class extends Controller {
 
   connect() {
 
-
     const nav = document.querySelector(".navbar-lewagon")
     const logo = document.querySelector(".nav-link")
     const links = document.querySelectorAll(".link")
@@ -77,8 +76,6 @@ export default class extends Controller {
           card3.style = "position: absolute; right: 0px;"
           card2.style = "position: absolute; top: 0px;"
         }
-
-
 
       }
     })
