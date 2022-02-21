@@ -11,4 +11,7 @@ class PagesController < ApplicationController
     @coaches = Coach.all
   end
 
+  def programmes
+  end
+
 end
