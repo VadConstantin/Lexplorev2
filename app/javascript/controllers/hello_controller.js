@@ -31,26 +31,32 @@ export default class extends Controller {
         lexplore.innerText = ""
         nav.style = "background: transparent; box-shadow: 0 0 0px rgba(0,0,0,0);"
         logo.style = "color: transparent; color: white;"
-        toggler.style = "display: none;"
+        if (window.screen.width < 450) {
+          toggler.style = "display: none"
+        }
         links.forEach((link) => {
           link.style = "opacity: 0"
         })
          } else if (window.scrollY > 609) {
-        lexplore.innerHTML = "<em>L</em>"
-        lexploreFooter.style = "color: white"
-        nav.style = "background: white"
-        toggler.style = "display: initial;"
-        logo.style = "opacity: 1; color: rgb(8, 31, 61)"
-        links.forEach((link) => {
-          link.style = "opacity: 1; color: rgb(8, 31, 61)"
-        })
+            lexplore.innerHTML = "<em>L</em>"
+            lexploreFooter.style = "color: white"
+            nav.style = "background: white"
+            if (window.screen.width < 450) {
+              toggler.style = "display: initial"
+            }
+            logo.style = "opacity: 1; color: rgb(8, 31, 61)"
+            links.forEach((link) => {
+              link.style = "opacity: 1; color: rgb(8, 31, 61)"
+            })
        } else {
-        lexplore.innerText = "LEXPLORE"
-        nav.style = "background: #FF6370"
-        toggler.style = "display: initial"
-        logo.style = "opacity: 1; color: white;"
-        links.forEach((link) => {
-          link.style = "opacity: 1; color: white"
+          lexplore.innerText = "LEXPLORE"
+          nav.style = "background: #FF6370"
+          if (window.screen.width < 450) {
+            toggler.style = "display: initial"
+          }
+          logo.style = "opacity: 1; color: white;"
+          links.forEach((link) => {
+            link.style = "opacity: 1; color: white"
         })
       }
     })
@@ -117,7 +123,7 @@ export default class extends Controller {
             programTitle.style = " position: relative; top: 0px; left: 0px; transition: 1s; color: rgb(255,98,112); margin-top: 80px;"
           } else {
             cardProgramme.style = "position: absolute; left: 580px;"
-            programTitle.style = "position: relative; opacity: 0; color: rgb(255,98,112)"
+            programTitle.style = "position: relative; opacity: 1; top: -220px; left: 0; color: rgb(255,98,112)"
             }
       }
     })
