@@ -1,1 +1,271 @@
-hello
+<div data-controller="hello">
+
+  <div class="photo">
+    <%#= image_tag cl_image_path @coach.photo.key, :width=>1000, :height=>1000, :crop=>"lfill" %>
+  </div>
+  <%# --------- banner --------- %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0.9,0,0.2)), url(<%= image_path('Choice.jpg') %>)">
+    <div class="container banner-elements">
+      <h1>
+        Vous accompagner dans votre projet professionnel
+      </h1>
+      <br>
+      <br>
+      <div>
+        <%= link_to "Prendre rendez-vous", "#", class: "btn-rdv"%>
+      </div>
+    </div>
+  </div>
+
+  <div class="container margin-100">
+
+    <%# --------- Intro --------- %>
+
+    <div class="flex-intro">
+      <div class="intro">
+        <h1 class="bolder" style="color: rgb(255,98,112)"><em>L</em>exploration</h1>
+        <br>
+        <br>
+        Explorer c’est l’envie de sortir de soi, de chercher à rencontrer de nouveaux horizons. Avoir l’envie de porter son regard ailleurs, de se définir un but et se mettre en marche pour l’atteindre. On peut avoir envie d’ailleurs sans savoir où aller.
+        <br>
+        <br>
+        Ma mission est de vous accompagner dans votre projet professionnel, de définir avec vous un objectif et vous aidez à l’atteindre.
+      </div>
+
+      <div class="body-anim">
+        <div class="div-anim "><em>L</em>explore</div>
+        <div class="div-anim">
+          <span>vous accompagne</span>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <%# ---------de bonnes raisons -------- %>
+
+    <div class="contact-links" id="bonne-raison">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+        <div class="space"><%= link_to "de bonnes raisons d'explorer", "#", class: "btn-contact" %></div>
+    </div>
+
+    <%# ---------contact -------- %>
+
+    <div class="contact-links">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+        <div class="space"><%= link_to "contact", "#", class: "link-contact" %></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <%# ---------cards-------- %>
+
+    <div class="cards">
+      <%=link_to "#" do %>
+      <div class="cards-parent">
+        <div id="a-propos">Qui suis-je ?</div>
+        <div class="card-1">
+        </div>
+      </div>
+      <% end %>
+
+      <%=link_to "#" do %>
+      <div class="cards-parent">
+        <div id="programs">Mes programmes</div>
+        <div class="card-2">
+        </div>
+      </div>
+      <% end %>
+
+      <%=link_to "#" do %>
+      <div class="cards-parent">
+        <div id="reviews">Témoignages</div>
+        <div class="card-3">
+        </div>
+      </div>
+      <% end %>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <%# ---------a propos-------- %>
+
+    <div class="flex-intro">
+
+      <div class="dessin-barre">
+        <div class="dessin-propos">
+        <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
+        <%= image_tag "dessin.png", width: 500, height: 500, id: "qui-suis-je-photo", style: "border-radius: 5px;"  %>
+        </div>
+        <%# <div class="barre"></div> %>
+      </div>
+
+      <div class="propos">
+        <div id="about-paraph">
+          <h1 class="bolder" style="color: rgb(255,98,112)">Qui suis-je ?</h1>
+          <br>
+          <br>
+          Juriste de formation et heureuse reconvertie, j’accompagne à présent des personnes en besoin d’exploration.
+          <br>
+          <br>
+          <br>
+          <%=link_to "En savoir plus", "#", class: "btn-propos"  %>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <%# ---------accompagnement-------- %>
+
+    <div class="card-accompagnement">
+
+      <h1 class="bolder" style="color: rgb(255,98,112)">Les piliers de mon accompagnement</h1>
+
+      <div class="flex-intro">
+        <div class="pilier">
+          <h3>
+            <strong>Optimisme</strong> 👍🏼
+            <br>
+            <br>
+          </h3>
+            Tout commence par une idée.
+            Peut-être voulez-vous créer une entreprise.
+            Peut-être voulez-vous.
+        </div>
+
+        <div class="pilier">
+          <h3>
+            <strong>Créativité</strong> ✏️
+            <br>
+            <br>
+          </h3>
+            Ne vous souciez pas d’avoir l’air professionnel. Soyez vous-même. Il y a plus d’1,5 milliard de sites web, mais c’est votre histoire qui fera la différence.
+        </div>
+
+        <div class="pilier">
+          <h3>
+            <strong>Écoute</strong> 👂🏼
+            <br>
+            <br>
+          </h3>
+            Soyez clair(e), soyez confiant(e) et n’y réfléchissez pas trop. La beauté de votre histoire, c’est qu’elle va continuer !
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <%# ---------programmes-------- %>
+
+    <div class="flex-intro">
+      <div class="dessin-programme">
+      <%#= image_tag cl_image_path @coach.photo.key, :width=>500, :height=>500, :crop=>"lfill" %>
+      <%= image_tag "dessin-program.png", width: 700, height: 520, id: "mes-progammes-photo", style: "border-radius: 5px;"  %>
+      </div>
+      <div class="mes-prog">
+        <div>
+          <h1 class ="programme-title bolder"style="color: rgb(255,98,112)">Mes programmes</h1>
+          <br>
+
+          <div class="card-programme">
+            <h3> I - Bilan de carrière</h3>
+            Pour accompagner votre réflexion tout en mettant en place un plan d’action.
+            <br>
+            <br>
+            <br>
+            <%=link_to "En savoir plus", "#", class: "btn-propos"  %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <%# ---------coaching-------- %>
+  <div class="container margin-100-bis">
+    <div class="coaching-card">
+
+      <div class="flex-coaching">
+        <div class="pilier-coaching-1">
+          <h3>II - Coaching</h3>
+            <br>
+
+
+            Qu’est-ce qui me manque aujourd’hui pour être épanoui.e dans mon travail ? Quelles sont mes aspirations ? Quel est mon futur challenge ? Autant de questions (et de réponses), qui peuvent être abordées dans le cadre d’un programme de coaching.
+            <br>
+            <br>
+            <br>
+            <%= link_to "En savoir plus", "#", class: "btn-propos" %>
+        </div>
+        <div style="padding-top: 130px;">
+          <%= image_tag "coaching-free.png", width: 500, height: 300, id: "image-coaching-2", style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%)" %>
+        </div>
+      </div>
+
+      <div class="flex-coaching">
+        <div class="display" style="padding-top: 130px; padding-right: 50px;">
+          <%= image_tag "coaching.jpeg", width: 500, height: 300, id: "image-coaching-3", style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%) " %>
+        </div>
+        <div class="pilier-coaching-2">
+            <h3>III - Coaching ciblé</h3>
+
+              <br>
+              En entretien d’embauche. Face au stress, face au manque de confiance en soi. Le coaching ciblé permet, en une ou plusieurs séances, de travailler sur des thématiques déterminées.
+            <br>
+            <br>
+            <br>
+            <%= link_to "En savoir plus", "#", class: "btn-propos" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <%# --------- témoignages -------- %>
+
+  <div class="text-center">
+    <h1 class="bolder" style="color: rgb(255,98,112)">Retours d'exploration</h1>
+  </div>
+
+  <div class="overflow">
+    <div class="cards-tem">
+        <div class="cards-parent-tem">
+          <div class="card-tem-1">
+          <em>« Quelle chance d’avoir pu être accompagnée par Natacha pendant plusieurs mois par sa bienveillance, ses mots encourageants et sa grande écoute ! Sa connaissance et son expérience du milieu juridique font de Natacha un coach idéal pour les juristes en quête de sens.
+          <br>
+          <br>
+          Encore un grand MERCI ! » </em>
+          </div>
+          <div id="signature">— Clémence*, avocate</div>
+        </div>
+
+        <div class="cards-parent-tem">
+          <div class="card-tem-1">
+          <em>« Quelle chance d’avoir pu être accompagnée par Natacha pendant plusieurs mois par sa bienveillance, ses mots encourageants et sa grande écoute ! Sa connaissance et son expérience du milieu juridique font de Natacha un coach idéal pour les juristes en quête de sens. » </em>
+          </div>
+          <div id="signature">— Cécilia*, avocate</div>
+        </div>
+
+        <div class="cards-parent-tem">
+          <div class="card-tem-1">
+          <em>« Quelle chance d’avoir pu être accompagnée par Natacha pendant plusieurs mois par sa bienveillance, ses mots encourageants et sa grande écoute ! Sa connaissance et son expérience du milieu juridique font de Natacha un coach idéal pour les juristes en quête de sens. » </em>
+          </div>
+          <div id="signature">— Flore*, avocate</div>
+        </div>
+    </div>
+  </div>
+
+</div>
