@@ -3,8 +3,7 @@ class PagesController < ApplicationController
   # skip_before_action :authenticate_user!, :raise => false
 
   def home
-    @users = User.all
-    @coach = Coach.last
+
   end
 
   def admin
