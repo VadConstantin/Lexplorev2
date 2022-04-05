@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   end
 
   get '/programmes', to: 'pages#programmes'
+  get '/bilan', to: 'pages#bilan'
+  get '/coaching', to: 'pages#coaching'
+  get '/coaching-cible', to: 'pages#coachingcible'
 
 end

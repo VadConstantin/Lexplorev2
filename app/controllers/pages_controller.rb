@@ -14,4 +14,7 @@ class PagesController < ApplicationController
   def programmes
   end
 
+  def bilan
+  end
+
 end
