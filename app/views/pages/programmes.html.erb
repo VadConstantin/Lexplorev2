@@ -6,10 +6,56 @@
     </div>
   </div>
 
-  <div class="container mt-4">
+  <div class="container">
 
     <div class="carte-programme">
-    <%= image_tag "dessin-program-3.png", width: 500, height: 300, id: "mes-progammes-photo", style: "border-radius: 5px;"  %>
+      <%= image_tag "dessin-program-3.png", width: 450, height: 300, id: "mes-progammes-photo", style: "border-radius: 5px;"  %>
+      <div class="program-content">
+        <h3><strong>Bilan de carrière</strong></h3>
+        <br>
+        <br>
+        <div class="text">
+          Le Bilan de carrière permet de faire le point tant sur un plan personnel que professionnel. Il inclut donc le Bilan de compétences, mais permet de creuser plus en profondeur son projet de vie. Le bilan de carrière s’adresse aux personnes souhaitant aligner leurs ambitions professionnelles à leurs vie personnelles avant de faire le grand saut. Ce programme se déroule en deux étapes principales.
+        </div>
+        <br>
+        <br>
+        <%=link_to "En savoir plus", "#", class: "btn-propos"  %>
+      </div>
     </div>
+
+    <div class="carte-programme">
+      <%= image_tag "coaching-free.png", width: 450, height: 300, style: "border-radius: 5px;"  %>
+      <div class="program-content">
+        <h3><strong>Coaching</strong></h3>
+        <br>
+        <br>
+        <div class="text">
+          Le coaching est à privilégier lorsque l’on souhaite se fixer un objectif puis mettre en place des objectifs intermédiaires avant l’atteinte de l’objectif final. Les outils du coaching peuvent être aussi utilisés, si c’est opportun, dans le cadre du Bilan de carrière, par exemple travailler sur les croyances limitantes, travailler sur la confiance en soi dans le nouveau projet pro…
+        </div>
+        <br>
+        <br>
+        <br>
+        <%=link_to "En savoir plus", "#", class: "btn-propos"  %>
+      </div>
+    </div>
+
+      <div class="carte-programme">
+      <%= image_tag "coaching.jpeg", width: 450, height: 300, style: "border-radius: 5px;"  %>
+      <div class="program-content">
+        <h3><strong>Coaching ciblé</strong></h3>
+        <br>
+        <br>
+        <div class="text">
+          Certaines situations nécessitent seulement une ou deux séances de coaching.
+          C’est notamment le cas lorsque l’on souhaite préparer un entretien ou pour booster sa confiance en soi ou encore pour mieux gérer son stress dans une situation donnée.
+        </div>
+        <br>
+        <br>
+        <br>
+        <%=link_to "En savoir plus", "#", class: "btn-propos"  %>
+      </div>
+    </div>
+
+
 
   </div>

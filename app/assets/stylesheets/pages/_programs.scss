@@ -1,3 +1,18 @@
 #program-title {
   text-align: center;
 }
+
+.carte-programme {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 160px;
+}
+
+.program-content {
+  padding-left: 100px;
+}
+
+.text {
+  text-align: justify;
+}
