@@ -1,3 +1,27 @@
 .bilan-content {
   margin-top: 100px;
 }
+
+.bilan-etape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.text-bilan {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.parent-quelrole {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.quelrole {
+  max-width: 700px;
+  text-align: justify;
+}
