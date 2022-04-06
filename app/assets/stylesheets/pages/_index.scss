@@ -110,8 +110,12 @@ body {
   }
 
   #bilan-1 {
-    width: 370px !important;
-    height: 240px !important;
+    width: 0px !important;
+    height: 0px !important;
+  }
+
+  .parent-quelrole {
+    margin-top: 100px !important;
   }
 
   .bilan-content-2 {
@@ -120,6 +124,7 @@ body {
 
   .bilan-etape {
     margin-bottom: 0px !important;
+    margin-top: 0px !important
   }
 
   .program-content {
