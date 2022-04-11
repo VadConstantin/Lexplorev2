@@ -1,0 +1,11 @@
+<div class="container mt-5" style="width: 700px;">
+
+  <%= simple_form_for [@contact] do |f| %>
+  <%= f.input :first_name, label: "Votre prénom"  %>
+  <%= f.input :surname, label: "Votre nom de famille"  %>
+  <%= f.input :email, label: "Votre email", input_html: { autocomplete: 'email' }   %>
+  <%= f.input :content, as: :text,  label: "votre message"  %>
+  <%= f.button :submit, "Envoyer", class: 'btn-propos' %>
+  <% end %>
+
+</div>

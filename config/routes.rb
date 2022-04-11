@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'contacts/index'
-  get 'contacts/create'
+
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
  root to: 'pages#home'
@@ -11,7 +10,9 @@ Rails.application.routes.draw do
     resources :reviews
   end
 
-  resource :contacts, only: [:new, :create]
+  resource :contacts, only: [:new, :create] do
+    get "/thanks" => "contacts#thanks"
+  end
 
   get '/programmes', to: 'pages#programmes'
   get '/bilan', to: 'pages#bilan'
