@@ -20,4 +20,7 @@ class PagesController < ApplicationController
   def coaching
   end
 
+  def contact
+  end
+
 end
