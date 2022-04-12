@@ -1,2 +1,8 @@
-<h1>bonjour tu as reçu un message de <%= @contact.first_name  %></h1>
-Son message : <%= @contact.content  %>
+<div class="container">
+  <h3>Salut Natacha! </h3>
+  <h4>Tu as reçu un message de <%= @contact.first_name %> <%= @contact.surname %></h4>
+  <strong> Son message :</strong> <%= @contact.content %>
+  <br><br>
+
+  <strong>Son email : </strong><%= @contact.email %>
+</div>
