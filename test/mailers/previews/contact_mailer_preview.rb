@@ -2,7 +2,7 @@
 class ContactMailerPreview < ActionMailer::Preview
 
   def contact
-    ContactMailer.contact(User.first)
+    ContactMailer.contact_mail(Contact.last)
   end
 
 end

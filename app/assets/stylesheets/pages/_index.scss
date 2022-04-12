@@ -25,6 +25,14 @@ body {
   .body-anim {
     display: none;
   }
+
+.contact-text {
+    width: 700px !important;
+    padding-right: 100px;
+    text-align: justify;
+    margin-top: 40px;
+  }
+
   .intro {
     width: 100%;
   }
@@ -87,6 +95,13 @@ body {
 //IPAD PORTRAIT
 
 @media (max-width: 1000px) {
+
+  .contact-text {
+    width: 700px !important;
+    padding-right: 100px;
+    text-align: justify;
+    margin-top: 40px;
+  }
 
   .bolder {
     font-weight: bold !important;
@@ -215,6 +230,15 @@ body {
   }
   .propos {
     display: inline !important;
+  }
+
+  .formulaire {
+    width: 360px !important;
+  }
+
+  .contact-text {
+    padding-right: 0px !important;
+    margin-top: 0px !important;
   }
 
   #about-paraph {
