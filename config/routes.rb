@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/bilan', to: 'pages#bilan'
   get '/coaching', to: 'pages#coaching'
   get '/coaching-cible', to: 'pages#coachingcible'
+  get '/reasons', to: 'pages#reasons'
 
 
 end

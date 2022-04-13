@@ -23,4 +23,7 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def reasons
+  end
+
 end
