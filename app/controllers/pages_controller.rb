@@ -18,6 +18,7 @@ class PagesController < ApplicationController
   end
 
   def coaching
+    @contact = Contact.new
   end
 
   def contact

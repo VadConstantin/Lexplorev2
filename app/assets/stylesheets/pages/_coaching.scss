@@ -4,6 +4,7 @@
 
 .mini-banner {
   margin-top: 100px;
+  margin-bottom: 100px;
   background-color: rgb(130, 131, 161);
   width: 100%;
   height: 300px;
@@ -14,4 +15,43 @@
 
 .mini-banner-text {
   display: inline-block;
+}
+
+.coaching-etape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.mid-banner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgb(130, 131, 161);
+  width: 100%;
+  height: 600px;
+  color: white;
+}
+
+.mid-banner-text {
+  padding-top: 160px;
+  padding-right: 60px;
+  padding-left: 400px;
+  width: 80%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.mon-role {
+  padding-right: 60px;
+  padding-left: 400px;
+  margin-bottom: 100px;
+  width: 80%;
+  text-align: justify;
+}
+
+.center-me {
+  display: table;
+  margin: 0 auto;
 }
