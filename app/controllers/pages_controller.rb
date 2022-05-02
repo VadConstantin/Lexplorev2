@@ -27,4 +27,7 @@ class PagesController < ApplicationController
   def reasons
   end
 
+  def apropos
+  end
+
 end

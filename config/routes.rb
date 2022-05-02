@@ -19,6 +19,6 @@ Rails.application.routes.draw do
   get '/coaching', to: 'pages#coaching'
   get '/coaching-cible', to: 'pages#coachingcible'
   get '/reasons', to: 'pages#reasons'
-
+  get '/apropos', to: 'pages#apropos'
 
 end
