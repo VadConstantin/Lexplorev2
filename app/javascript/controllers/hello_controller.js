@@ -50,7 +50,7 @@ export default class extends Controller {
             })
        } else {
           lexplore.innerText = "LEXPLORE"
-          nav.style = "background: #FF6370"
+          nav.style = "background: rgb(130,131,161)"
           if (window.screen.width < 450) {
             toggler.style = "display: initial"
           }
