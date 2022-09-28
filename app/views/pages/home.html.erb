@@ -7,7 +7,7 @@
   <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0.9,0,0.2)), url(<%= image_path('Choice.jpg') %>)">
     <div class="container banner-elements">
       <h1>
-        Vous accompagner dans votre projet professionnel
+        Je vous accompagne dans l'exploration de votre projet professionnel
       </h1>
       <br>
       <br>
@@ -23,13 +23,15 @@
 
     <div class="flex-intro">
       <div class="intro">
-        <h1 class="bolder" style="color: rgb(255,98,112)"><em>L</em>exploration</h1>
+        <h1 class="bolder" style="color: rgb(255,98,112)"><em>L</em>exploration professionelle</h1>
         <br>
         <br>
-        Explorer c’est l’envie de sortir de soi, de chercher à rencontrer de nouveaux horizons. Avoir l’envie de porter son regard ailleurs, de se définir un but et se mettre en marche pour l’atteindre. On peut avoir envie d’ailleurs sans savoir où aller.
+        Lexploration est un programme de coaching/Bilan de carrière qui permet de faire un
+        pas de côté pour envisager votre avenir professionnel différemment.
         <br>
         <br>
-        Ma mission est de vous accompagner dans votre projet professionnel, de définir avec vous un objectif et vous aidez à l’atteindre.
+        C’est porter son regard ailleurs, se définir un but et se mettre en marche pour
+        l’atteindre. Vous pouvez avoir envie d’ailleurs sans savoir où aller.
       </div>
 
       <div class="body-anim">
@@ -45,10 +47,7 @@
     <%# ---------de bonnes raisons -------- %>
 
     <div class="contact-links" id="bonne-raison">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg>
-        <div class="space"><%= link_to "de bonnes raisons d'explorer", reasons_path, data: { turbo_frame: "modal" }, class: "btn-contact" %></div>
+      <div class="space reasons"><%= link_to "Pourquoi se lancer dans lexploration professionnelle ?", reasons_path, data: { turbo_frame: "modal" }, class: "btn-contact" %></div>
     </div>
 
     <%= turbo_frame_tag "modal" %>
@@ -56,10 +55,7 @@
     <%# ---------contact -------- %>
 
     <div class="contact-links">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg>
-        <div class="space"><%= link_to "contact", new_contacts_path, class: "link-contact" %></div>
+      <div class="space reasons"><%= link_to "contact", new_contacts_path, class: "link-contact" %></div>
     </div>
 
     <br>
