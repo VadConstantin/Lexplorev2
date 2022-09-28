@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   def programmes
   end
 
+  def coaching_cible
+  end
+
   def bilan
   end
 

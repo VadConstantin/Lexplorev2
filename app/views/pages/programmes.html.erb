@@ -26,21 +26,6 @@
     <div class="carte-programme">
       <%= image_tag "coaching-free.png", width: 440, height: 300, id: 'photo-program', style: "border-radius: 5px;"  %>
       <div class="program-content">
-        <h3><strong>Coaching</strong></h3>
-        <br>
-        <br>
-        <div class="text">
-          Le coaching est à privilégier lorsque l’on souhaite se fixer un objectif puis mettre en place des objectifs intermédiaires avant l’atteinte de l’objectif final. Les outils du coaching peuvent être aussi utilisés, si c’est opportun, dans le cadre du Bilan de carrière, par exemple travailler sur les croyances limitantes, travailler sur la confiance en soi dans le nouveau projet pro…
-        </div>
-        <br>
-        <br>
-        <%=link_to "En savoir plus", coaching_path, class: "btn-propos"  %>
-      </div>
-    </div>
-
-      <div class="carte-programme">
-      <%= image_tag "coaching.jpeg", width: 440, height: 300, id: 'photo-program', style: "border-radius: 5px;"  %>
-      <div class="program-content">
         <h3><strong>Coaching ciblé</strong></h3>
         <br>
         <br>
@@ -50,8 +35,23 @@
         </div>
         <br>
         <br>
+        <%=link_to "En savoir plus", coaching_cible_path, class: "btn-propos"  %>
+      </div>
+    </div>
+
+      <div class="carte-programme">
+      <%= image_tag "coaching.jpeg", width: 440, height: 300, id: 'photo-program', style: "border-radius: 5px;"  %>
+      <div class="program-content">
+        <h3><strong>Coaching professionnel</strong></h3>
         <br>
-        <%=link_to "En savoir plus", "#{coaching_path}#coaching-cible", class: "btn-propos"  %>
+        <br>
+        <div class="text">
+          Qu'est-ce qui vous manque aujourd'hui pour être épanoui(e) dans votre travail ? Quel est votre futur challenge ? Autant de questions (et de réponses) qui peuvent être abordées dans le cadre d'un programme de coaching.
+        </div>
+        <br>
+        <br>
+        <br>
+        <%=link_to "En savoir plus", coaching_path, class: "btn-propos"  %>
       </div>
     </div>
 

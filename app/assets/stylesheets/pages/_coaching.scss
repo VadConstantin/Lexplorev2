@@ -1,5 +1,5 @@
 .coaching-content {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .mini-banner {
@@ -30,14 +30,16 @@
   margin-bottom: 100px;
   background-color: rgb(130, 131, 161);
   width: 100%;
-  height: 600px;
+  height: 500px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mid-banner-text {
-  padding-top: 160px;
   padding-right: 60px;
-  padding-left: 400px;
+  padding-left: 140px;
   width: 80%;
   font-size: 20px;
   text-align: justify;
@@ -54,4 +56,10 @@
 .center-me {
   display: table;
   margin: 0 auto;
+}
+
+.cible-container {
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 220px;
 }

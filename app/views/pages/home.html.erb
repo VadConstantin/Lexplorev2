@@ -182,7 +182,8 @@
 
           <div class="card-programme">
             <h3> I - Bilan de carrière</h3>
-            Pour accompagner votre réflexion tout en mettant en place un plan d’action.
+            Pour faire le point sur votre situation professionnelle et vous accompagner dans une
+            nouvelle étape.
             <br>
             <br>
             <br>
@@ -199,15 +200,16 @@
 
       <div class="flex-coaching">
         <div class="pilier-coaching-1">
-          <h3>II - Coaching</h3>
+          <h3>II - Coaching ciblé</h3>
             <br>
-
-
-            Qu’est-ce qui me manque aujourd’hui pour être épanoui.e dans mon travail ? Quelles sont mes aspirations ? Quel est mon futur challenge ? Autant de questions (et de réponses), qui peuvent être abordées dans le cadre d’un programme de coaching.
+            Une ou deux séances de coaching peuvent permettent d’avancer sur une thématique bien définie.
             <br>
             <br>
+            <em>Exemples: préparation à un entretien d'embauche, gestion du stress...</em>
             <br>
-            <%= link_to "En savoir plus", "#", class: "btn-propos" %>
+            <br>
+            <br>
+            <%= link_to "En savoir plus", coaching_cible_path, class: "btn-propos" %>
         </div>
         <div style="padding-top: 130px;">
           <%= image_tag "coaching-free.png", width: 500, height: 300, id: "image-coaching-2", style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%)" %>
@@ -219,14 +221,13 @@
           <%= image_tag "coaching.jpeg", width: 500, height: 300, id: "image-coaching-3", style: "border-radius: 7px; box-shadow: 0 0 15px rgb(0 0 0 / 15%) " %>
         </div>
         <div class="pilier-coaching-2">
-            <h3>III - Coaching ciblé</h3>
-
+            <h3>III - Coaching professionnel</h3>
               <br>
-              En entretien d’embauche. Face au stress, face au manque de confiance en soi. Le coaching ciblé permet, en une ou plusieurs séances, de travailler sur des thématiques déterminées.
+              Qu'est-ce qui vous manque aujourd'hui pour être épanoui(e) dans votre travail ? Quel est votre futur challenge ? Autant de questions (et de réponses) qui peuvent être abordées dans le cadre d'un programme de coaching.
             <br>
             <br>
             <br>
-            <%= link_to "En savoir plus", "#", class: "btn-propos" %>
+            <%= link_to "En savoir plus", coaching_path, class: "btn-propos" %>
         </div>
       </div>
     </div>
